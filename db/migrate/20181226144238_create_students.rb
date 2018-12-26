@@ -7,7 +7,12 @@ class CreateStudents < ActiveRecord::Migration[5.0]
     # HINT: checkout ActiveRecord::Migration.create_table
     create_table :students do |t|
       # add columns that you would need for this table
-
+      t.string :first_name
+      t.string :last_name
+      t.string :gender
+      t.date :birthday 
+      t.string :email
+      t.integer :phone 
       t.timestamps
     end
   end
