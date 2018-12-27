@@ -33,6 +33,16 @@ task "db:populate" do
   StudentsImporter.import
 end
 
+desc "populate join table between students and teachers"
+task "db:join" do 
+  teachers = Teacher.all
+  students = Student.all 
+  students.each do |s|
+    teachers.sample.students << s
+  end
+end
+
+
 desc "populate the teachers database with sample data"
 task "db:populate_teacher" do
   # Create some teachers for your teachers table in database
