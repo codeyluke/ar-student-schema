@@ -48,6 +48,13 @@ task "db:populate_teacher" do
   Teacher.create(first_name: "steve",last_name: "keluar",email: "keluar@email.com",phone: "+6012311234")
 end
 
+desc "Populate the teachers_student associations"
+task "db:populate_associations" do
+
+  # TeacherStudent.create()
+end
+
+
 desc 'Retrieves the current schema version number'
 task "db:version" do
   puts "Current version: #{ActiveRecord::Migrator.current_version}"

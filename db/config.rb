@@ -2,6 +2,7 @@ require 'active_record'
 require_relative '../app/models/student.rb'
 require_relative '../app/models/subject.rb'
 require_relative '../app/models/teacher.rb'
+require_relative '../app/models/teacher_student.rb'
 
 ActiveRecord::Base.establish_connection(:adapter => 'sqlite3', :database => "#{File.dirname(__FILE__)}/./ar-students.sqlite3")
 
@@ -24,4 +25,12 @@ ActiveRecord::Base.establish_connection(:adapter => 'sqlite3', :database => "#{F
 # end
 # ============================================
 
+# students = Student.all
+# students_id = Hash.new()
+
+# students.each do |s|W
+#    students_id << s.id
+# end
+
+# pp students_id
 
