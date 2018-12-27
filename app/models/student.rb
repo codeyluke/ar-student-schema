@@ -4,7 +4,9 @@ class Student < ActiveRecord::Base
     validates :email, uniqueness: true 
     validates :age, numericality: { greater_than: 5}
     validates :phone, length: { minimum: 10}
-    has_many :teacher, through: :student_teachers
+    has_many :student_teachers
+    has_many :teachers, through: :student_teachers
+
     def name 
        "#{self.first_name} #{self.last_name}"
     end
