@@ -6,22 +6,22 @@ require_relative '../app/models/teacher.rb'
 ActiveRecord::Base.establish_connection(:adapter => 'sqlite3', :database => "#{File.dirname(__FILE__)}/./ar-students.sqlite3")
 
 
-# t
-# teacher = Teacher.first 
-# teacher.delete
 
-# student = Student.create(
-#     first_name: "rea",
-#     last_name: "alex",
-#     gender: "female",
-#     birthday: "1990-12-19",
-#     email: "rea@example.com",
-#     phone: "+601293123123"
-# )
 
-# student = Student.first
-# student.delete
+# ==========================================
+# ONE TO MANY 
 
-# student = Student.last 
-# student.delete
+# teachers = Teacher.all
+# students = Student.all
+# teachers_id = []
+
+# teachers.each do |t|
+#     teachers_id << t.id 
+# end
+
+# students.each do |s|
+#    s.update(teachers_id: teachers_id.sample)
+# end
+# ============================================
+
 

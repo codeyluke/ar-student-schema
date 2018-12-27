@@ -45,6 +45,7 @@ task "db:populate_teacher" do
   Teacher.create(first_name: "anda",last_name: "boy",email: "anda@email.com",phone: "+6012311234")
   Teacher.create(first_name: "jesus",last_name: "girl",email: "jesus@email.com",phone: "+6012311234")
   Teacher.create(first_name: "steve",last_name: "other",email: "steve@email.com",phone: "+6012311234")
+  Teacher.create(first_name: "steve",last_name: "keluar",email: "keluar@email.com",phone: "+6012311234")
 end
 
 desc 'Retrieves the current schema version number'
