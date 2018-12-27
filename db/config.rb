@@ -25,12 +25,3 @@ ActiveRecord::Base.establish_connection(:adapter => 'sqlite3', :database => "#{F
 # end
 # ============================================
 
-# students = Student.all
-# students_id = Hash.new()
-
-# students.each do |s|W
-#    students_id << s.id
-# end
-
-# pp students_id
-
