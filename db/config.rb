@@ -6,13 +6,7 @@ require_relative '../app/models/teacher.rb'
 ActiveRecord::Base.establish_connection(:adapter => 'sqlite3', :database => "#{File.dirname(__FILE__)}/./ar-students.sqlite3")
 
 
-# teacher = Teacher.create(
-#     first_name: "Dolla",
-#     last_name: "Sign",
-#     email: "dolla@email.com",
-#     phone: "+6012311234"
-# )
-
+# t
 # teacher = Teacher.first 
 # teacher.delete
 

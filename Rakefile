@@ -36,6 +36,15 @@ end
 desc "populate the teachers database with sample data"
 task "db:populate_teacher" do
   # Create some teachers for your teachers table in database
+  Teacher.create(first_name: "herry",last_name: "dasan",email: "dasani@email.com",phone: "+6012311234")
+  Teacher.create(first_name: "calum",last_name: "dasa",email: "calum@email.com",phone: "+6012311234")
+  Teacher.create(first_name: "diana",last_name: "dan",email: "diana@email.com",phone: "+6012311234")
+  Teacher.create(first_name: "leon",last_name: "dasani",email: "leon@email.com",phone: "+6012311234")
+  Teacher.create(first_name: "malcolm",last_name: "mcgregor",email: "malcolm@email.com",phone: "+6012311234")
+  Teacher.create(first_name: "dasani",last_name: "phone",email: "dasani@email.com",phone: "+6012311234")
+  Teacher.create(first_name: "anda",last_name: "boy",email: "anda@email.com",phone: "+6012311234")
+  Teacher.create(first_name: "jesus",last_name: "girl",email: "jesus@email.com",phone: "+6012311234")
+  Teacher.create(first_name: "steve",last_name: "other",email: "steve@email.com",phone: "+6012311234")
 end
 
 desc 'Retrieves the current schema version number'
